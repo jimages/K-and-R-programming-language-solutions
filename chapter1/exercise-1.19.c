@@ -22,7 +22,7 @@ int main(void) {
     size_t len;
 
     /* Now we get the string and reverse.*/
-    while (len = getline(line, MAXLINE)) {
+    while ((len = getline(line, MAXLINE))) {
         reverse(line, len);
         printf("%s", line);
     }
